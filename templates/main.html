@@ -1,0 +1,17 @@
+{% extends "header.html" %}
+{% block content %}
+
+<h2>List of your playlists</h2>
+<br>
+<a href="{{url_for('addPlaylist')}}">New</a> 
+<br><br>
+{% for playlist in array %}
+<div class="border playlist">
+    <h2><a href="{{url_for('viewPlaylist', playlist_id=playlist.id)}}">{{playlist.name}}</a></h1> 
+    <a href="{{url_for('editPlaylist', playlist_id=playlist.id)}}">rename</a>
+    <a href="{{url_for('deletePlaylist', playlist_id=playlist.id)}}">delete</a>
+</div>
+{% endfor %}
+   
+
+{% endblock %}

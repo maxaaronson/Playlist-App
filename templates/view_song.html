@@ -1,0 +1,22 @@
+{% extends "header.html" %}
+{% block content %}
+
+<div class="song_info">
+	<h1>{{song.title}} </h1><br>
+
+	<p><img src="{{song.artwork}}" alt="Band logo" width="300px"></p>
+	<p>Artist: {{song.artist}}</p>
+	<p>Album: {{song.album}}</p>
+	<p>Duration: {{song.duration}}</p>
+
+
+	<iframe width="420" height="315"
+	src="https://www.youtube.com/embed/{{song.youtubeId}}">
+	</iframe>
+
+	<br><br>
+	<a href="{{url_for('viewPlaylist', playlist_id = playlist_id)}}">Go back</a>
+</div>
+
+
+{% endblock %}

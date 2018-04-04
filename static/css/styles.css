@@ -1,0 +1,61 @@
+.header {
+    background-color: #91b9ff;
+    height: 50px;
+    padding: .5em 0 1em 0;
+}
+
+html {
+	border: 2px solid grey;
+	font-family: ariel, sans-serif;
+}
+
+body {
+	text-align: center;
+}
+
+.playlist {
+    width: 49%;
+    float: left;
+    background-color: silver;
+}
+
+.song {
+    background-color: silver;
+}
+
+.border {
+	border: 1px solid black;
+}
+
+.song_info {
+	background-color: #aff762;
+}
+
+a {
+	text-decoration: none;
+	font-weight: bold;
+}
+
+.left {
+	float: left;
+}
+
+button {
+	background-color: green;
+	color: yellow;
+}
+.right {
+	float: right;
+}
+
+.clear {
+	float: clear both;
+}
+
+.form-control {
+	margin: 1em;
+}
+
+label {
+	font-style: italic;
+}
